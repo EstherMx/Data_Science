@@ -1,53 +1,73 @@
  source:
 https://medium.com/towards-data-science/how-to-teach-yourself-data-science-in-2020-f674ec036965           
 
-             Data Science Roadmap	
+               Data Science Roadmap  
 
 Part 1 - Data Processing with SQL, Python and R
-•	Extract data from a database (SQL)
-•	Clean, manipulate, analyze data (Python or R)
-•	Visualize data 
-	Source: Dataquest (sql fundamentals), Datacamp (intro to sql), the book Storytelling with Data by Cole Knaflic (visualization story)
+•   Extract data from a database (SQL)
+•   Clean, manipulate, analyze data (Python or R)
+•   Visualize data 
+   Source: Dataquest (sql fundamentals), Datacamp (intro to sql), the book Storytelling with Data by Cole Knaflic (visualization story)
 Dig deeper: intermediate and advanced concepts, such as,
-•	Handling NULL with COALESCE
-•	sub-queries and their impact on the query’s efficiency
-•	Temporary tables
-•	Self joins
-•	Window functions like PARTITION, LEAD, LAG
-•	User defined functions.
-•	Use of indexes in querying to make operations faster
-	Source: SQLZoo.net (interview questions), Zachary Thomas’s SQL Questions and Leetcode
+•   Handling NULL with COALESCE
+•   sub-queries and their impact on the query’s efficiency
+•   Temporary tables
+•   Self joins
+•   Window functions like PARTITION, LEAD, LAG
+•   User defined functions.
+•   Use of indexes in querying to make operations faster
+   Source: SQLZoo.net (interview questions), Zachary Thomas’s SQL Questions and Leetcode
 
 Part 2 – Mathematics, Probability and Statistics
 Probability:
-•	The concept of “independent events” (foundation, most used)
-•	The counting Rule
-•	Discrete random variables
-•	Continuous random variables
-•	Bayesian inference
-•	Limit theorems
-•	Classical Statistics
-•	Apply probability with R or Python
-
-Courses:
-	Khan Academy’s Statistics and Probability (High school level)
-	HarvardX’s Data Science – Probability (PH125.3x) on Datacamp  (college level – gentle intro in R)
-	HarvardX Stat 110: Introduction to Probability (College / Graduate level)
-	MITx 6.431 Probability — The Science of Uncertainty and Data (College / Graduate Level)
+•   The concept of “independent events” (foundation, most used)
+•   The counting Rule
+•   Discrete random variables
+•   Continuous random variables
+•   Bayesian inference
+•   Limit theorems
+•   Classical Statistics
+•   Courses:
+   Khan Academy’s Statistics and Probability (High school level)
+   HarvardX’s Data Science – Probability (PH125.3x) on Data camp  (college level – gentle intro in R)
+   HarvardX Stat 110: Introduction to Probability (College / Graduate level)
+   MITx 6.431 Probability — The Science of Uncertainty and Data (College / Graduate Level)
 Videos: 
-	StatQuest with John Starmer on YouTube
-	Discrete Math Series by Dr Trefor Bazett on YouTube (containing concepts in probability)
+   StatQuest with John Starmer on YouTube
+   Discrete Math Series by Dr Trefor Bazett on YouTube (containing concepts in probability)
 Website:
-	Seeing Theory: https://seeing-theory.brown.edu/basic-probability/index.html
+   Seeing Theory: https://seeing-theory.brown.edu/basic-probability/index.html
 
 Apply probability with R or Python:
-	Take a class in A/B testing, an important skill for a data scientist. https://www.udacity.com/course/ab-testing--ud257
+   Take a class in A/B testing, an important skill for a data scientist. https://www.udacity.com/course/ab-testing--ud257
 To understand such statistical tools, one needs to build a strong foundation in probability. A data scientist must understand probability concepts before making a proper sampling plan. Probability forms the foundation of machine learning.
+Mathematics:
+Statistics:
+
 
 Part 3 – Computer Science Fundamentals
+Python:
+•   Variables
+•   Datatypes
+•   Loops
+•   Functions
+•   If statements
+•   OOP
+•   Dictionary
+•   Linked lists
+•   Queues
+•   Heaps
+•   Trees
+•   Graphs
+•   Monty Python
+
+   CodingBat.com
+   Python for beginners: www.python.org
+   freecodecamp
+
+
 Part 4 – Machine Learning
 
-Lexico: R is a collection of useful packages to organize, manipulate and visualize data: gglplot2 (for data visualization), dplyr ( for data manipulation) and stringr ( for string manipulation).
-
+Lexico: R is a collection of useful packages to organize, manipulate and visualize data: gglplot2 (for data visualization), dplyr (for data manipulation) and stringr ( for string manipulation).
 
 
