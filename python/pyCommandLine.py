@@ -30,7 +30,7 @@ print('All done!')
 
 
 # TRY and EXCEPT are used when we know the result might return an error.
-# Meaning: 'try' this code and if there's a throwback then execute 'except' followed by (:)
+# Meaning: 'try' this code and if there's a traceback then execute 'except' followed by (:)
 astr = 'Bob'
 try:
     print('Hello')
@@ -38,5 +38,5 @@ try:
 except:
     istr = -1
 print ('Done', istr)
-
+# Usually used when the user has to enter a number, if the input is not an integer, execute 'except' than return 'not a number'
 
