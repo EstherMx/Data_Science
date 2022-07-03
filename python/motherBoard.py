@@ -27,3 +27,5 @@ capacitor, resistor and transitors are tinier on a microprocessor (r: image)
  ROM are usually hard-coded into the hardware itself, and cannot be changed or deleted. As for HDD and SSD, these are just storage devices used to store user and OS data, like movies, music, Windows files, etc. ROM is usually not read even by the OS, it's a very low-level storage which can't be easily accessed.
 
  _source: motherboard explained video:https://www.youtube.com/watch?v=b2pd3Y6aBag
+
+ pwd in command line is the see the whole path of the current file
