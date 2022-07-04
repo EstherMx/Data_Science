@@ -40,3 +40,13 @@ except:
 print ('Done', istr)
 # Usually used when the user has to enter a number, if the input is not an integer, execute 'except' than return 'not a number'
 
+
+# Breaking out of a While loop
+
+while True: 
+    Line = input('>')
+    if line != 'done':
+        print(line)
+    else: 
+        print('DONE!')
+        break
