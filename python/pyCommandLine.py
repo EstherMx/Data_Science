@@ -79,3 +79,33 @@ for letter in 'Python':
 # This for loop will go through each letter of 'Python', if the current letter is 'h' then the loop will ignore the rest
 # of the code and go back up to the beginning of the for loop and move on to the next letter.
 # All the letters in 'Python' except 'h' will be printed at the end of the loop. 
+# Whereas 'break' will stop the whle process of the loop
+
+
+#FOR LOOP
+for i in [5, 6, 3, 4]:
+    print(i)
+print('Done!')
+
+# 'i' is a variable that represents each index of the array
+# once we're done looping and print each index, we exit the 
+# for loop then print 'Done!'
+
+
+# Difference between == and 'IS' operator in Python
+#  _source: https://www.geeksforgeeks.org/difference-operator-python/
+# In short, 'IS' checks identity or location of an object, which can be checked with id() function 
+# in python which returns the “identity” of an object.
+
+# Python's is keyword compares references (and so is about identity)
+# while === does a minimal amount of coercion (and is therefore concerned with equality, 
+# at least in the case of primitives) so they are different.
+
+#Does Python use '==='? (answer from StackOverflow)
+# Mathematica has an === operator which is a shortcut for the SameQ predicate. But it doesn't make sense in python. – 
+# President James K. Polk
+#  Jul 17, 2011 at 18:06
+# 4
+# If you need a ===, you're not writing Python. Python uses duck typing and interfaces rather than types – 
+# Humphrey Bogart
+#  Sep 16, 2011 at 22:13
