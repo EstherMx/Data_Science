@@ -20,7 +20,7 @@
 # print ('OverTime pay:', overTime)
 
 
-# Breaking out of a while loop
+# Breaking out of a while loop (infinite loop)
 # Esther's code
 while True: 
     line = input('>') # ('>') means it takes any input by the user
@@ -41,3 +41,16 @@ while True:
 print('Outside of the loop') # <=== outside of the while loop. called when the loop is over
 
 #In Python, a loop ends a line before indented, compared to javaScript where everything is aligned
+
+#ie:
+n = 0
+while True:
+	if n == 3:
+		break
+	print(n)
+	n = n + 1  # result: 0 1 2
+
+# In this ie, we start with 0 and as long as n is not equal to 3 we add
+# 1 to n and this new n is pushed back up to the while loop 
+# until n = 3 and hits the break, which is the end of the loop. NO parentheses
+# no curly brakets, no semicolon

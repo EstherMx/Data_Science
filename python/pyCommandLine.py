@@ -41,12 +41,41 @@ print ('Done', istr)
 # Usually used when the user has to enter a number, if the input is not an integer, execute 'except' than return 'not a number'
 
 
-# Breaking out of a While loop
 
+# WHILE LOOP / CONTINUE (Infinite loop)
+
+# Breaking out of a while loop (infinite loop)
+# Esther's code
 while True: 
-    Line = input('>')
+    line = input('>') # ('>') means it takes any input by the user
     if line != 'done':
         print(line)
     else: 
         print('DONE!')
-        break
+        break  #<==== end of the while loop
+print('Outside of the loop')
+
+# The code
+while True:
+    line = input('>')
+    if line == 'done':
+        print('DONE!')
+        break # <=== end of the while loop when break is activated
+    print(line)  # <=== part of the while loop while true
+print('Outside of the loop') # <=== outside of the while loop. called when the loop is over
+
+#In Python, a loop ends a line before indented, compared to javaScript where everything is aligned
+
+
+
+#CONTINUE returns to the beginning of the loop and ignores all the remaining statements in the current iteration of the loop.
+# The continue statement can be used in both while and for loops.
+# ie:
+for letter in 'Python':    
+   if letter == 'h':
+      continue
+   print 'Current Letter :', letter
+
+# This for loop will go through each letter of 'Python', if the current letter is 'h' then the loop will ignore the rest
+# of the code and go back up to the beginning of the for loop and move on to the next letter.
+# All the letters in 'Python' except 'h' will be printed at the end of the loop. 
