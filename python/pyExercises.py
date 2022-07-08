@@ -20,35 +20,35 @@
 # print ('OverTime pay:', overTime)
 
 
-# Breaking out of a while loop (infinite loop)
-# Esther's code
-while True: 
-    line = input('>') # ('>') means it takes any input by the user
-    if line != 'done':
-        print(line)
-    else: 
-        print('DONE!')
-        break  #<==== end of the while loop
-print('Outside of the loop')
+# # Breaking out of a while loop (infinite loop)
+# # Esther's code
+# while True: 
+#     line = input('>') # ('>') means it takes any input by the user
+#     if line != 'done':
+#         print(line)
+#     else: 
+#         print('DONE!')
+#         break  #<==== end of the while loop
+# print('Outside of the loop')
 
-# The code
-while True:
-	line = input('>')
-	if line == 'done':
-		print('DONE!')
-		break # <=== end of the while loop when break is activated
-	print(line)  # <=== part of the while loop while true
-print('Outside of the loop') # <=== outside of the while loop. called when the loop is over
+# # The code
+# while True:
+# 	line = input('>')
+# 	if line == 'done':
+# 		print('DONE!')
+# 		break # <=== end of the while loop when break is activated
+# 	print(line)  # <=== part of the while loop while true
+# print('Outside of the loop') # <=== outside of the while loop. called when the loop is over
 
 #In Python, a loop ends a line before indented, compared to javaScript where everything is aligned
 
 #ie:
-n = 0
-while True:
-	if n == 3:
-		break
-	print(n)
-	n = n + 1  # result: 0 1 2
+# n = 0
+# while True:
+# 	if n == 3:
+# 		break
+# 	print(n)
+# 	n = n + 1  # result: 0 1 2
 
 # In this ie, we start with 0 and as long as n is not equal to 3 we add
 # 1 to n and this new n is pushed back up to the while loop 
@@ -59,10 +59,23 @@ while True:
 
 # Find the smallest value from a list of values.
 
-smallest = None
-print('Before:', smallest)
-for itervar in [3, 41,12,9,74,15]:
-	if smallest is None or itervar < smallest:
-		smallest = itervar
-	print('Loop:', itervar, smallest)
-print('Smallest number:', smallest)
+# smallest = None
+# print('Before:', smallest)
+# for itervar in [3, 41,12,9,74,15]:
+# 	if smallest is None or itervar < smallest:
+# 		smallest = itervar
+# 	print('Loop:', itervar, smallest)
+# print('Smallest number:', smallest)
+
+
+#Comment calculer la moyenne de cette array:
+arr = [2, 4, 6, 8, 7, 5]
+
+moyenne = 0
+quantity = 0
+for chiffre in arr:
+	moyenne += chiffre
+	quantity += 1
+moyenne /= len(arr) 
+print('moyenne:',moyenne, 'quantity:', quantity)
+
