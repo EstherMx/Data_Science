@@ -69,13 +69,30 @@
 
 
 #Comment calculer la moyenne de cette array:
-arr = [2, 4, 6, 8, 7, 5]
+# arr = [2, 4, 6, 8, 7, 5]
 
-moyenne = 0
-quantity = 0
-for chiffre in arr:
-	moyenne += chiffre
-	quantity += 1
-moyenne /= len(arr) 
-print('moyenne:',moyenne, 'quantity:', quantity)
+# moyenne = 0
+# quantity = 0
+# for chiffre in arr:
+# 	moyenne += chiffre
+# 	quantity += 1
+# moyenne /= len(arr) 
+# print('moyenne:',moyenne, 'quantity:', quantity)
 
+# found = False
+# for value in [5, 6, 3, 4, 7, 3]:
+# 	if value == 3:
+# 		found = True
+# 		print("here's found:", value, found)
+		# found = False
+# 		continue
+# 	print(found, value)
+
+
+smallest = None
+print(smallest)
+for value in [3, 5, 4, 5, 1, 7, 23]:
+	if smallest is None or value < smallest:
+		smallest = value
+print('smallest value:', smallest)
+print(id(None))
