@@ -1,4 +1,10 @@
 # To see more days, check out my Twitter @esreine
+Day 14 of #100DaysOfCode.Learned about #SQL: INSERT INTO vs UPDATE vs ALTER. Also, read an article on why one should avoid using SELECT * (unnecessary I/O, increase network traffic). 
+https://dzone.com/articles/why-you-should-not-use-select-in-sql-query-1
+
+#66daysofcode #womenwhocode
+
+
 Day 13. Learned about Churn analytics and it's used to keep customers.
 https://mixpanel.com/blog/churn-analytics/
 
