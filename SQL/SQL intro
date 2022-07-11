@@ -22,3 +22,26 @@ UPDATE celebs
 SET net_worth = 5000000
 WHERE name = 'Henry Cavell';
 //here UPDATE modifies the existing data stored in the table/database. SET refers to a column and WHERE refers to a specific row.
+
+
+
+CONSTRAINTS (PRIMARY KEY, UNIQUE, NOT NULL, DEFAULT)
+
+Constraints that add information about how a column can be used are invoked after specifying the data type for a column. They can be used to tell the database to reject inserted data that does not adhere to a certain restriction. The statement below sets constraints on the celebs table.
+
+CREATE TABLE celebs (
+   id INTEGER PRIMARY KEY, 
+   name TEXT UNIQUE,
+   date_of_birth TEXT NOT NULL,
+   date_of_death TEXT DEFAULT 'Not Applicable'
+);
+
+1. PRIMARY KEY columns can be used to uniquely identify the row. Will not allowed to insert the new row with the same PRIMARY KEY.
+
+2. UNIQUE columns have a different value for every row. This is similar to PRIMARY KEY except a table can have many different UNIQUE columns.
+
+3. NOT NULL columns must have a value. Cannot be left without a value. The new row will not be inserted. 
+
+4. DEFAULT columns take an additional argument that will automatically used if the value is left empty.
+ie: date_of_death TEXT DEFAULT 'Not Applicable'
+// date_of_death will return 'Not Application' is the person has not died yet.
