@@ -1,0 +1,6 @@
+SQL intro
+A table, known as relation, is a collection of data organized into rows and columns. 
+
+A column is a set of data values of a particular type. Here, id, name, and age are the columns.
+
+A row is a single record in a table. 
