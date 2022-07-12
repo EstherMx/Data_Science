@@ -1,27 +1,34 @@
-SQL intro
+SQL intro using SQLite
+
 A table, known as relation, is a collection of data organized into rows and columns. 
 
 A column is a set of data values of a particular type. Here, id, name, and age are the columns.
 
 A row is a single record in a table. 
 
+SELECT * FROM celebs; 
 
 ALTER vs INSER INTO vs UPDATE
 
 ALTER TABLE celeb
 ADD COLUMN net_worth INT;
-//here ALTER TABLE changes the structure of the table by adding a new column. Since we haven't added any new values, net_worth column will return ∅ (NULL) for each celeb.  
+//here ALTER TABLE changes the structure of the table by adding a new column. Since we haven't added any new values, net_worth column will return ∅ (NULL) for each celeb. 
+! NULL value represents missing or unknown data
 
-INSER INTO celeb (id INT, name TEXT, age INT)
+INSERT INTO celeb (id INT, name TEXT, age INT)
 VALUES (1, 'Adele', 30),
 (2, 'John Legend', 41),
 (3, 'Henry Cavell', 45);
-// here INSER INTO will add new values or rows to an already exiting table with columns.
+// here INSER INTO will add new rows with values to an already exiting table with columns.
 
 UPDATE celebs
 SET net_worth = 5000000
 WHERE name = 'Henry Cavell';
 //here UPDATE modifies the existing data stored in the table/database. SET refers to a column and WHERE refers to a specific row.
+
+DELETE FROM celebs 
+WHERE twitter_handle IS NULL;
+//here DELETE FROM will delete all of the rows that have a NULL value in the twitter handle column, in the table celebs.
 
 
 
@@ -42,6 +49,25 @@ CREATE TABLE celebs (
 
 3. NOT NULL columns must have a value. Cannot be left without a value. The new row will not be inserted. 
 
-4. DEFAULT columns take an additional argument that will automatically used if the value is left empty.
+4. DEFAULT columns take a value that will automatically be used if the input is left empty.
 ie: date_of_death TEXT DEFAULT 'Not Applicable'
 // date_of_death will return 'Not Application' is the person has not died yet.
+
+!! (); after CREATE TABLE and value in quotations right after DEFAULT
+
+
+REVIEW:
+CREATE DATABASE database_name;
+USE database_name;
+ALTER TABLE table_name ADD COLUMN column_name TEXT;
+INSERT INTO table_name VALUES(); //new row
+CREATE TABLE table_name();
+UPDATE table_name SET existing_column = new_value WHERE column_name = value;
+DELETE FROM table_name WHERE row_name = value;
+SELECT * FROM table_name;
+
+
+!! You can insert NULL values into columns with the UNIQUE constraint because NULL is the absence of a value, so it is never equal to other NULL values and not considered a duplicate value. This means that it's possible to insert rows that appear to be duplicates if one of the values is NULL.
+
+If you need to strictly enforce uniqueness, use the NOT NULL constraint in addition to the UNIQUE constraint. You can also achieve the same behavior through the table's Primary Key.
+_source: https://www.cockroachlabs.com/docs/stable/unique.html
