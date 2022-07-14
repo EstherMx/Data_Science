@@ -1,0 +1,19 @@
+SQL exercises:
+CREATE TABLE friends(id INTEGER PRIMARY KEY, name TEXT UNIQUE, birthday DATE NOT NULL);
+
+INSERT INTO friends
+VALUES( 1, 'Ororo Munroe', '1940-05-30');
+
+INSERT INTO friends
+VALUES(2, 'Henry Cavell', '2021-01-14'),
+      (3, 'Valery Brown', '1968-089-23');
+
+UPDATE friends
+SET birthday = '1968-09-23' WHERE id = 3;
+UPDATE friends
+SET name = 'Storm' WHERE name = 'Ororo Munroe';
+
+ALTER friends
+ADD COLUMN email TEXT UNIQUE NOT NULL;
+
+SELECT * FROM friends;
