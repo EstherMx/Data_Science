@@ -59,9 +59,9 @@ ie: date_of_death TEXT DEFAULT 'Not Applicable'
 REVIEW:
 CREATE DATABASE database_name;
 USE database_name;
+CREATE TABLE table_name();
 ALTER TABLE table_name ADD COLUMN column_name TEXT;
 INSERT INTO table_name VALUES(); //new row
-CREATE TABLE table_name();
 UPDATE table_name SET existing_column = new_value WHERE column_name = value;
 DELETE FROM table_name WHERE row_name = value;
 SELECT * FROM table_name;
