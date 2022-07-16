@@ -71,3 +71,27 @@ SELECT * FROM table_name;
 
 If you need to strictly enforce uniqueness, use the NOT NULL constraint in addition to the UNIQUE constraint. You can also achieve the same behavior through the table's Primary Key.
 _source: https://www.cockroachlabs.com/docs/stable/unique.html
+
+
+
+AS
+=======================================
+SELECT name AS 'Titles'
+FROM movies;
+
+// here it's best practice to use AS with singme quotes
+// AS doesn't have change the core of the table, the alias only appear in the result.
+
+
+DISCTINCT
+=======================================
+SELECT DISTINCT genre 
+FROM movies;
+
+//Although there are multiple movies with the same genre, this query will only return individual genre. It filters out duplicate values in the column.
+ie: horror, comedy, drama
+// There are hundreds of movies that have the same year as the release date, but DISTINCT will only not return one output for each year
+
+SELECT DISTINCT year 
+FROM movies;
+
