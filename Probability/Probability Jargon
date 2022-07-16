@@ -1,0 +1,12 @@
+Probability Jargon
+
+ A sample space is the set of all the possible outcomes an action could produce.
+ ie: sample_space = {'heads', 'tails'}
+
+ All outcomes within sample_space share an identical probability, which is equal to 1/ len(sample_space)
+ // 1 over the len(sample_space), where len() is a method that returns the number of elements in array (sample_space), not the same of the elements
+ // the result of the probability will always be a decimal between 0 and 1, where 0 means no chance of happening and 1 means 100% chances of happening
+
+ ie:
+ probability_heads = 1 / len(sample_sample)
+ probability_heads = 1/ 2 = 0.5
