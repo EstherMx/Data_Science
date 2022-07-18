@@ -1,0 +1,20 @@
+python_jargon
+
+Python Functions
+Simply put, a function is a series of steps executed as a single unit and “encapsulated” under a single name. It is a group of statements capable of performing some tasks.
+
+A function in a program can take arguments (that is, the data to operate on) and can optionally return some data after performing the intended task. Creating a function is basically giving your computer well-defined instructions to perform a task.
+
+range10 = range(10)
+for i in range10:
+  print(i, end=' ')  // end=' ' will print the result on one line and leave a space bwtween each i
+
+ie:
+print('========================')
+friends = [ 'jo', 'glenn', 'sally']
+for friend in friends:
+  print('this is my friend:', friend)
+for i in range(len(friends)):    // i the number of rang(3) since len(friends = 3) 
+  friend_info = friends[i]
+  print('this their id:', i, friend_info)
+
