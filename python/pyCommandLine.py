@@ -109,3 +109,34 @@ print('Done!')
 # If you need a ===, you're not writing Python. Python uses duck typing and interfaces rather than types – 
 # Humphrey Bogart
 #  Sep 16, 2011 at 22:13
+
+
+
+
+LISTS (check the value of a list in the command line)
+
+>> X = list()
+>> type(x)
+<type 'list'>
+>> dir(x)
+['append','count','extend','index','insert']
+
+
+SLICE A LIST
+>> t = [9, 41, 12, 55]
+>> t[1: 3] //the new list starts at index 1 up to but not including index 3.
+[9, 41, 12]
+>> t[2:] //the new list starts at index 2 till the end
+[12, 55]
+>> t[:2] //the first two numbers, not including index 2
+[9, 41]
+>> t[:] //the whole list
+[9, 41, 12, 55]
+
+
+CONCATENATE LISTS
+>> a = [1, 2, 3]
+>> b = [4, 5, 6]
+>> c = a + b
+>> print(c)
+[1, 2, 3, 4, 5, 6]
