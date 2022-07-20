@@ -112,13 +112,13 @@ print('Done!')
 
 
 
-
+list = array
 LISTS (check the value of a list in the command line)
 
 >> X = list()
 >> type(x)
 <type 'list'>
->> dir(x)
+>> dir(x)   //return what is on the list
 ['append','count','extend','index','insert']
 
 
@@ -140,3 +140,33 @@ CONCATENATE LISTS
 >> c = a + b
 >> print(c)
 [1, 2, 3, 4, 5, 6]
+
+
+APPEND to add an item at the end of a LISTS
+>> stuff = list()  //this list is empty
+>> stuff append['book'] //adding the string book at the list stuff
+>> stuff append[66]  
+>> print(stuff)
+['book', 66]
+
+
+# SPLIT() break a string into indivitual word to save it in an array
+
+>>string = 'with three words'
+>>makeList = string.split() #breaks into indexes based on spaces
+>>print(makeList)
+['with','three','words']
+>>print(makeList[0])
+with
+
+# If there's no spaces in the string:
+>>line = 'first;second;third'
+>> thing = line.split(;)  #break words into indexes base on ';'
+>> print(thing)
+['first','second','third']
+
+
+R: finish ex above
+check if a work is in a list
+rstip() to remove the space at the end of a document or line
+ the ie with the email address
