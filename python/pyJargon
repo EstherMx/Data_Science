@@ -19,7 +19,6 @@ for i in range(len(friends)):    // i the number of rang(3) since len(friends = 
   print('this their id:', i, friend_info)
 
 
-
 REVIEW:
 LIST SUMMARY:
 concept of a collection
@@ -32,3 +31,37 @@ list methods: append, remove
 sorting lists
 spliting strings into lists of words
 using split to parse strings
+
+
+DICTIONARIES (Python's most powerful data collection)
+Dictionaries are the object of Javascript
+Curly brakets, colon, key are the properties and value = value
+
+>>dictionary = dict()     //dict() BUILT-IN FUNCTION represent an empty obj
+>>dictionary['age'] = 21      //adding a key/property of age with value of 21 to the obj/dictionary 'dict()'
+>>dictionary['course'] = 182  //add new key and value to dict
+>>print(dictionary)
+{'age':21, 'course':182}	  // return an obj/a dictionary
+
+
+LISTS VS DICTIONARTIES (array vs obj)
+Lists index their entries based on the position in the list
+Dictionaries have properties/key followed by its value
+
+(the same exemple but for a list)
+>>lst = list()
+>>lst.append(21)
+>>lst.append(182)
+>>print(list)
+[21, 182]
+
+
+
+GET() METHOD - 
+shorter version of if/else default value (check pyCommandLine for ie)
+x = counts get(name, 0) #retrieve of value of an existing name if the condition is true and 0 as a default value otherwise
+
+We use get() and provided a default value of zero when the key is not yet in the dictionary - and then just added 1 to the count of the new name
+
+
+

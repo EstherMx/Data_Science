@@ -175,13 +175,6 @@ with
 email@gmail.com
 
 
-R: finish ex above
-check if a work is in a list
-rstip() to remove the space at the end of a document or line
- the ie with the email address
-
-
-
 current_file = open('py4e.txt')
 
 For line in current_file:
@@ -192,3 +185,36 @@ For line in current_file:
         date = no_space[2]
     print(date)
 
+
+
+FROM A LIST TO A DICTIONARY
+# check if the names from a list are already in the collection of a dictionary
+# if so, add 1 to the count of the name. If not, add the name to the dit() collection (as a new value)
+# and give it the count of 1. A follow:
+
+counts = dict()   #is a empty obj/dictionary
+names = ['csev', 'zqian']
+for name in names:
+    if name not in counts:
+        counts[name] = 1  #thie add the new name of the collection counts and gives it the value of 1 (first time)
+    else:
+        counts[name] = counts[name] + 1 #we add 1 to the count of the existing name
+print(counts)   #return a obj the value of each name
+{'csev':3, 'zqian':5, 'newFile':0}
+
+
+
+GET() METHOD
+
+x = counts get(name, 0) #retrieve of value of an existing name if the condition is true and 0 as a default value otherwise
+
+# (same as above exemple)
+
+counts = dict()
+names = ['csev', 'zqian', 'excel']
+for name in names:
+    counts[name] = counts get (name, 0) + 1
+print(counts)
+{{'csev':3, 'zqian':5, 'newFile':0}}
+
+# Here, we use get() and provided a default value of zero when the key is not yet in the dictionary - and then just added 1 to the count of the new name
