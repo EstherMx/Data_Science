@@ -151,7 +151,6 @@ APPEND to add an item at the end of a LISTS
 
 
 # SPLIT() break a string into indivitual word to save it in an array
-
 >>string = 'with three words'
 >>makeList = string.split() #breaks into indexes based on spaces
 >>print(makeList)
@@ -160,10 +159,20 @@ APPEND to add an item at the end of a LISTS
 with
 
 # If there's no spaces in the string:
+# the Delimiter is the arg inside split(), here's ';'
 >>line = 'first;second;third'
 >> thing = line.split(;)  #break words into indexes base on ';'
 >> print(thing)
 ['first','second','third']
+
+>>>words = 'his e-mail is q-email@gmail.com'
+>>> pieces = words.split()
+>>> parts = pieces[3].split('-')
+>>> n = parts[1]
+>>> print(parts)
+['q', 'email@gmail.com']
+>>> print(n)
+email@gmail.com
 
 
 R: finish ex above

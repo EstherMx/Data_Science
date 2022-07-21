@@ -96,3 +96,18 @@ for value in [3, 5, 4, 5, 1, 7, 23]:
 		smallest = value
 print('smallest value:', smallest)
 print(id(None))
+
+
+
+# LISTS AND STRINGS
+
+From email@gmail.com Sat 12-31-22  #this is a line from the file mbox.txt
+
+#in the python file, we'll write this to import mbox.txt
+fhand = open('mbox.txt')
+for line in fhand:
+	line = line rstrip()  #erease the empty space at the end of each line
+	if not line startwith('From') : continue #si la ligne du file ne commence pas par 'From' ignore la suite de cette commande
+	words = line split() #each line will be returned into an array and the spaces will divide the indexes
+	print(words[1]) # returns email@gmail.com
+
