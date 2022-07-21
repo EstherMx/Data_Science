@@ -179,3 +179,16 @@ R: finish ex above
 check if a work is in a list
 rstip() to remove the space at the end of a document or line
  the ie with the email address
+
+
+
+current_file = open('py4e.txt')
+
+For line in current_file:
+    no_space = line.rstrip() 
+    if no_space not startwith('From') and len(no_space) < 1:
+        continue
+        no_space.split()
+        date = no_space[2]
+    print(date)
+
