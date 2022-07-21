@@ -18,3 +18,17 @@ for i in range(len(friends)):    // i the number of rang(3) since len(friends = 
   friend_info = friends[i]
   print('this their id:', i, friend_info)
 
+
+
+REVIEW:
+LIST SUMMARY:
+concept of a collection
+lists and definite loops
+indexing and lookup
+list mutability
+funcitons: len, min, max, sum
+slicing list
+list methods: append, remove 
+sorting lists
+spliting strings into lists of words
+using split to parse strings
