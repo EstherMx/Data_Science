@@ -205,16 +205,15 @@ print(counts)   #return a obj the value of each name
 
 
 GET() METHOD
-
-x = counts get(name, 0) #retrieve of value of an existing name if the condition is true and 0 as a default value otherwise
+x = counts.get(name, 0) #retrieve of value of an existing name if the condition is true and 0 as a default value otherwise
 
 # (same as above exemple)
 
 counts = dict()
 names = ['csev', 'zqian', 'excel']
 for name in names:
-    counts[name] = counts get (name, 0) + 1
+    counts[name] = counts.get(name, 0) + 1
 print(counts)
 {{'csev':3, 'zqian':5, 'newFile':0}}
 
-# Here, we use get() and provided a default value of zero when the key is not yet in the dictionary - and then just added 1 to the count of the new name
+# Here, we use .get() and provided a default value of zero when the key is not yet in the dictionary - and then just added 1 to the count of the new name

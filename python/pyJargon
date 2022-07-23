@@ -59,7 +59,7 @@ Dictionaries have properties/key followed by its value
 
 GET() METHOD - 
 shorter version of if/else default value (check pyCommandLine for ie)
-x = counts get(name, 0) #retrieve of value of an existing name if the condition is true and 0 as a default value otherwise
+x = counts.get(name, 0) #retrieve of value of an existing name if the condition is true and 0 as a default value otherwise
 
 We use get() and provided a default value of zero when the key is not yet in the dictionary - and then just added 1 to the count of the new name
 
