@@ -111,3 +111,22 @@ for line in fhand:
 	words = line split() #each line will be returned into an array and the spaces will divide the indexes
 	print(words[1]) # returns email@gmail.com
 
+
+
+
+# Find and count the most used words in a file
+
+current_file = open('info.txt')
+current_file.rstrip()
+count_word = dict()
+# divide into words
+# loop through every word in the file
+# add each word to the dictionary + count
+# print the dictionary and class by desc
+for word in current_file:
+	if word in count_word:
+		count_word[word] = count_word[word] + 1
+	else count_word[word] = 1
+	# or a simpler way instead of the if/else
+	count_word[word] = count_word.get(word, 0) + 1
+print(count_word)
